@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*전체사이트 핵심공통*/
+/*웹폰트*/
+@font-face {
+    font-family: Nanum;
+    src: url(../fonts/NanumGothic.eot) format("eot"),
+        url(../fonts/NanumGothic.woff) format("woff"),
+        url(../fonts/NanumGothic.ttf) format("truetype");
+}
+
+/*사이트 전체설정*/
+body {
+    font-family: Nanum, "SF Pro Display", "맑은 고딕";
+    color: #808080;
+    word-spacing: -1px;
+    line-height: 136%;
+    font-size: 12px;
+    text-align: left;
+    height: 100%;
+}
+
+/*IR(Image Replacement)-이미지설명요소 등 안보이게 처리*/
+.hid {
+    display: none;
+}

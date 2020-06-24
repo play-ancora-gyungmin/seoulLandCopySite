@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*gridSet.css*/
+
+/*
+all elements is boeder-box
+* {
+    box-sizing: border-box;
+}
+*/
+
+/*12 grid seting*/
+[class^="col-"] {
+    /* []elements =동일 *=포함 ^=선두 $=후미 */
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    /*outline: 1px dotted red;*/
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.cblock::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#grid {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 960px;
+    /*width: 960px;*/
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: -1;
+    /*display: none;*/
+}
+
+#grid::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#grid li {
+    float: left;
+    width: 8.333%;
+    height: 100%;
+    background-color: midnightblue;
+    opacity: .3;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-clip: content-box;
+}
